@@ -27,12 +27,12 @@ export class LoginComponent {
           alert("Bienvenido")
           this.router.navigateByUrl('/usuario');
         } else {
-          alert('No se puede iniciar sesteión');
+          alert('No se puede iniciar sesión');
         }
       },
       error => {
         console.error('Error en el login:', error);
-        alert('Ocurrió un error en el inicio de sesión');
+        alert('Error al iniciar de sesión');
       }
     );
   }
